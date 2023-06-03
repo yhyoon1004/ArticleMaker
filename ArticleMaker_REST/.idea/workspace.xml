@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1acad0d8-0085-4279-86fd-33f93ea2856a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../article_maker/component/layout/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../article_maker/component/layout/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../article_maker/component/layout/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/../article_maker/component/layout/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../article_maker/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../article_maker/pages/_app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +57,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Repository/ArticleMaker/ArticleMaker_REST/src/main/java/org/example/Main.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -69,7 +73,8 @@
       <option name="presentableId" value="Default" />
       <updated>1685541760062</updated>
       <workItem from="1685541760898" duration="16000" />
-      <workItem from="1685714689370" duration="157000" />
+      <workItem from="1685714689370" duration="2021000" />
+      <workItem from="1685802599998" duration="45000" />
     </task>
     <servers />
   </component>
