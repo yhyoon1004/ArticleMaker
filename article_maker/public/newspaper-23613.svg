@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 744.09447 1052.362179" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="b" x1="262.03" x2="261" y1="418.53" y2="242.89" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#505050" offset="0"/>
+   <stop stop-color="#bfbfbf" offset="1"/>
+  </linearGradient>
+  <linearGradient id="a" x1="285.52" x2="285.32" y1="683.88" y2="714.64" gradientTransform="matrix(21.863 0 0 12.662 -5850.1 -8590.8)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop stop-color="#efefef" offset=".84553"/>
+   <stop stop-color="#a2a2a2" offset="1"/>
+  </linearGradient>
+ </defs>
+ <path d="m139.62 74.481c-1.8e-4 -1.7e-4 -93.102 276.76-90.989 333.8s59.273 54.594 59.273 54.594h564.13s57.16 2.4512 59.273-54.594-90.99-333.8-90.989-333.8h-500.7z" fill="url(#a)" fill-rule="evenodd" stroke="#000" stroke-width="16.638"/>
+ <path d="m399.49 243.41h-242.97s-44.368 111.98-42.255 150.01 25.353 33.804 25.353 33.804h259.87v-183.81z" fill="url(#b)" fill-rule="evenodd" stroke="#555" stroke-width="16.638"/>
+ <text x="520.15076" y="120.12617" font-family="Bookman Old Style" font-size="7.6997" font-weight="bold" writing-mode="lr">
+  <tspan x="520.15076" y="120.12617">Dec 29, 2004 - The Inkscape</tspan>
+  <tspan x="520.15076" y="128.59583">developers have set a goal</tspan>
+  <tspan x="520.15076" y="137.0655">for the release of Inkscape 0.41</tspan>
+  <tspan x="520.15076" y="145.53517">for mid-late January. There are</tspan>
+  <tspan x="520.15076" y="154.00483">some noteworthy new features</tspan>
+  <tspan x="520.15076" y="162.4745">that would be worth getting out</tspan>
+  <tspan x="520.15076" y="170.94417">to users, and with some major</tspan>
+  <tspan x="520.15076" y="179.41383">internal changes that will be</tspan>
+  <tspan x="520.15076" y="187.8835">taking place soon, a good stable</tspan>
+  <tspan x="520.15076" y="196.35316">release is needed prior to starting</tspan>
+  <tspan x="520.15076" y="204.82283">such an undertaking.</tspan>
+ </text>
+ <text x="437.09244" y="236.60193" font-family="Bookman Old Style" font-size="16.476" font-weight="300" writing-mode="lr">
+  <tspan x="437.09244" y="236.60193">Dec 29, 2004 - The Inkscape</tspan>
+  <tspan x="437.09244" y="259.66869">developers have set a goal</tspan>
+  <tspan x="437.09244" y="282.73545">for the release of Inkscape 0.41</tspan>
+  <tspan x="437.09244" y="305.80222">for mid-late January. There are</tspan>
+  <tspan x="437.09244" y="328.86898">some noteworthy new features</tspan>
+  <tspan x="437.09244" y="351.93574">that would be worth getting out</tspan>
+  <tspan x="437.09244" y="375.0025">to users, and with some major</tspan>
+  <tspan x="437.09244" y="398.06927">internal changes that will be</tspan>
+  <tspan x="437.09244" y="421.13603">taking place soon, a good stable</tspan>
+  <tspan x="437.09244" y="444.20279">release is needed prior to starting</tspan>
+  <tspan x="437.09244" y="467.26955">such an undertaking.</tspan>
+ </text>
+ <g transform="matrix(16.638 0 0 16.638 -5850.1 -8590.8)" font-family="Bitstream Vera Sans" font-size="7.1952" font-weight="bold">
+  <text transform="skewX(344.68)" x="503.93686" y="528.50177">
+   <tspan x="503.93686" y="528.50177" font-family="Bitstream Vera Sans" letter-spacing="-.82718">N</tspan>
+  </text>
+  <text transform="skewX(352.2)" x="437.3074" y="528.50177">
+   <tspan x="437.3074" y="528.50177" font-family="Bitstream Vera Sans" letter-spacing="-.82718">E</tspan>
+  </text>
+  <text x="370.13919" y="528.3999">
+   <tspan x="370.13919" y="528.3999" font-family="Bitstream Vera Sans" letter-spacing="-.82718">WS</tspan>
+  </text>
+ </g>
+</svg>
