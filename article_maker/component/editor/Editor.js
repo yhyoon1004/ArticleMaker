@@ -1,27 +1,34 @@
-import {CKEditor} from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import React, { useEffect, useRef } from "react";
+export default function Editor({ onChange, editorLoaded, name, value }) {
 
-export default function Editor() {
+    // https://robiokidenis.medium.com/how-to-use-ckeditor-on-your-nextjs-or-react-app-525664cdb1d7
 
+    const editorRef = useRef();
+    const { CKEditor, ClassicEditor } = editorRef.current || {};
+
+    useEffect(() => {
+        editorRef.current = {
+            CKEditor: require("@ckeditor/ckeditor5-react").CKEditor,
+            ClassicEditor: require("@ckeditor/ckeditor5-build-classic")
+        };
+    }, []);
     return (
         <>
-            <CKEditor
-                editor={ClassicEditor}
-                onReady={editor => {
-                    console.log("Editor is ready!")
-                }}
-                onChange={(event, editor) => {
-                    const data = editor.getData();
-                    console.log({event, editor, data})
-                }}
-                onBlur={(event,editor)=> {
-                    console.log('Blur.', editor);
-                }}
-                onFocus={(event,editor)=>{
-                    console.log('Focus', editor);
-                }}
-
-            />
+            {editorLoaded ? (
+                <CKEditor
+                    type=""
+                    name={name}
+                    initialData={value}
+                    editor={ClassicEditor}
+                    data={value}
+                    onChange={(event, editor) => {
+                        const data = editor.getData();
+                        onChange(data);
+                    }}
+                />
+            ) : (
+                <div>Editor loading</div>
+            )}
         </>
     )
-};
+}
