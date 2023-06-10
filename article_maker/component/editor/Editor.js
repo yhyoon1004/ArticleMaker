@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Loading from "@/component/spinner/Loading";
 export default function Editor({ onChange, editorLoaded, name, value }) {
 
     // https://robiokidenis.medium.com/how-to-use-ckeditor-on-your-nextjs-or-react-app-525664cdb1d7
@@ -27,7 +28,7 @@ export default function Editor({ onChange, editorLoaded, name, value }) {
                     }}
                 />
             ) : (
-                <div>Editor loading</div>
+                <Loading/>
             )}
         </>
     )

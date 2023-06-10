@@ -10,18 +10,21 @@ export default function GNB() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" color={"grey"}/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Desk</Nav.Link>
-                        <Nav.Link href="#link">Write</Nav.Link>
-                        <Nav.Link href="#link">
+                        <Nav.Link href="/desk">Desk</Nav.Link>
+                        <Nav.Link href="/write/">Write</Nav.Link>
+                        <Nav.Link href="/photo">
                             Photo
                         </Nav.Link>
-                        <Nav.Link href="#link">
+                        <Nav.Link href="/video">
                             Video
                         </Nav.Link>
 
                         <NavDropdown title="Board" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">
-                                Board
+                            <NavDropdown.Item href="/board/company">
+                                Company Board
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/board/club">
+                                Club Board
                             </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
