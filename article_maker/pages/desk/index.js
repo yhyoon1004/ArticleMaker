@@ -1,9 +1,10 @@
 import Layout from "@/component/layout/layout";
+import ArticleTable from "@/component/table/ArticleTable";
 
 export default function ArticleListPage() {
     return (
         <Layout>
-            <div>기사 리스트 페이지</div>
+            <ArticleTable/>
         </Layout>
     )
 };
