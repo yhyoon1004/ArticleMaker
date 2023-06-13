@@ -1,6 +1,35 @@
 import Table from 'react-bootstrap/Table';
+import {useEffect, useState} from "react";
+import axios from "axios";
 
 export default function ArticleTable() {
+
+    const [article, setArticle] = useState([]);
+
+    const articleDataFetch = async () => {
+        try {
+            await axios({
+                url: "http://localhost:8080/desk",
+                method: "get",
+                headers: {
+                    "Content-Type": "application/json"
+
+                    // "Content-Type": "application/json"
+                },
+            }).then(res=>{
+                console.log(res.data);
+                setArticle(res.data);
+            })
+        }catch (error){
+            console.log(error)
+        }
+    }
+
+    useEffect(() => {
+        console.log("article : ", article);
+        articleDataFetch();
+    }, []);
+
     return (
         <Table size="sm" responsive="sm" striped bordered hover variant="dark">
             <thead>
@@ -15,15 +44,20 @@ export default function ArticleTable() {
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>2023.02.10 15:00</td>
-                <td>Mark</td>
-                <td>젤렌스키 "반격 작전 중"…자세한 사항은 노코멘트</td>
-                <td>볼로디미르 젤렌스키 우크라이나 대통령이 현지시각 10일 러시아군에 대한 반격 작전이 진행 중이라고 밝혔습니다.</td>
-                <td>송고</td>
-                <td>200</td>
-                <td>2023-06-11 10:35:24</td>
-            </tr>
+            {
+                article.map((item, idx) => (
+                    <tr key={idx}>
+                        <td>{item.create_time}</td>
+                        <td>{item.writer_id}</td>
+                        <td>{item.title}</td>
+                        <td>{item.content}</td>
+                        <td>{item.status}</td>
+                        <td>{item.view_count}</td>
+                        <td>{item.published_time}</td>
+                    </tr>
+                ))
+
+            }
             </tbody>
         </Table>
     );
