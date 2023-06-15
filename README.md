@@ -8,9 +8,12 @@
 <hr/>
 
 <h1>진척도 UI</h1>   
+- 메인화면
 <img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/99873098-b343-4f45-a92f-ece24ed89543" alt=""/>
+- 기사 목록 <데스크> 화면
+<img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/324756fe-1172-4104-8731-b9505026d414" alt=""/>
+- 기사 작성 에디터 화면
 <img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/4956e1d2-79b6-48eb-874a-95ed80b9b516" alt=""/>
+- 업로드 사진 목록 화면
 <img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/992fd388-f3d6-4f2a-a6bf-61b63006f36f" alt=""/>
-
-
 
