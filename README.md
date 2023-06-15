@@ -7,15 +7,10 @@
 </div>
 <hr/>
 
-<h2> ⏲️ Schedule Management | 일정관리 <h2>
-  <p>❗본 일정은 본인의 회사 업무에 따라 일정보다 길어지거나 계획이 바뀔 수 있다.<br/>
-  해당 일정은 초기 계획안이다.</p>
-  <pre style="font-size:50%">
-    [ ~ 2023.06.02] 프로그램 요구사항 명세 작성 및 분석 + 프로그램 스펙 정의 <br/>
-    [ ~ 2023.06.11] 개발 환경 서버 구축 ( SVN / webServer / wasServer / DB ) <br/>
-    [ ~ 2023.06.11] 기획안, UI 문서 작성, UI 템플릿 선정 <br/>
-    [ ~ 2023.06.24] BE업무 진행 ( DB설계 구현 / REST 설계 및 구축 ) <br/>
-    [ ~ 2023.07.02] FE업무 진행 ( 메인 페이지 / 기사 작성 페이지 / 작성기사 뷰 페이지 ) <br/>
-    [ ~ 2023.07.09] PM업무 진행 ( 기획안 보고 및 진척률 산정 / 추가 요구사항 정의 / 일정 관리 ) <br/>
-    [ ~ 2023.08.30] 프로젝트 마감 ( 개발 종료 )
-  </pre>
+<h1>진척도 UI</h1>   
+<img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/99873098-b343-4f45-a92f-ece24ed89543" alt=""/>
+<img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/4956e1d2-79b6-48eb-874a-95ed80b9b516" alt=""/>
+<img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/992fd388-f3d6-4f2a-a6bf-61b63006f36f" alt=""/>
+
+
+
