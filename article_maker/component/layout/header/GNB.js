@@ -1,10 +1,10 @@
-import {Container, Nav, Navbar, NavDropdown} from "react-bootstrap";
+import {Nav} from "react-bootstrap";
 
 export default function GNB() {
     const itemStyle  = {fontWeight:"bold", color:"grey"}
 
     return (
-        <Nav fill variant="tabs" defaultActiveKey="/home">
+        <Nav className="mb-1" fill variant="tabs" >
             <Nav.Item>
                 <Nav.Link href="/" style={itemStyle}>Home</Nav.Link>
             </Nav.Item>
