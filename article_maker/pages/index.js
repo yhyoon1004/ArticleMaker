@@ -1,5 +1,5 @@
 import Layout from "@/component/layout/layout";
-import TopBanner from "@/component/TopBanner";
+import TopBanner from "@/component/layout/header/TopBanner";
 import Loading from "@/component/spinner/Loading";
 
 
