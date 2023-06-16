@@ -7,5 +7,7 @@ import java.util.List;
 
 @Service
 public interface ArticleService {
-    List<Article> serveArticleList();
+    List<Article> serveGetArticleList();
+
+    Boolean serveInsertArticle(Article article);
 }

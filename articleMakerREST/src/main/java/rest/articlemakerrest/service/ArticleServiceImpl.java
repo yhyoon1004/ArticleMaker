@@ -12,7 +12,13 @@ import java.util.List;
 public class ArticleServiceImpl implements ArticleService{
     private final ArticleMapper articleMapper;
     @Override
-    public List<Article> serveArticleList() {
+    public List<Article> serveGetArticleList() {
         return articleMapper.getArticleList();
+    }
+
+
+    @Override
+    public Boolean serveInsertArticle(Article article) {
+        return articleMapper.insertArticle(article) > 0;//insert한 컬럼개수가 0보다 클 때
     }
 }

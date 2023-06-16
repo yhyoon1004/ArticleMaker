@@ -5,4 +5,18 @@
     <select id="getArticleList" resultType="rest.articlemakerrest.DTO.Article">
         SELECT * FROM  articleMaker.article;
     </select>
+
+    <insert id="insertArticle" parameterType="rest.articlemakerrest.DTO.Article">
+        INSERT INTO articleMaker.article
+        VALUES (
+                #{id},
+                #{status},
+                #{writer_id},
+                #{title},
+                #{content},
+                #{create_time},
+                #{published_time},
+                #{view_count}
+        )
+    </insert>
 </mapper>
