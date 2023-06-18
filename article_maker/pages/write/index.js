@@ -1,14 +1,14 @@
 import Layout from "@/component/layout/layout";
 import Editor from "@/component/editor/Editor";
 import {useEffect, useState} from "react";
-import {Button, Col, Container, Row} from "react-bootstrap";
+import {Button,Form, Col, Container, InputGroup, Row} from "react-bootstrap";
 import SideBar from "@/component/editor/SideBar";
 import axios from "axios";
 
 export default function Index() {
     const [editorLoaded, setEditorLoaded] = useState(false);
     const [articleContent, setArticleContent] = useState("default");
-
+    const[articleTitle, setArticleTitle] = useState("");
     useEffect(() => {
         setEditorLoaded(true);
     }, []);
@@ -25,7 +25,7 @@ export default function Index() {
                     "id": null,
                     "status": 0,
                     "writer_id": "yh",
-                    "title": "titletemp",
+                    "title": articleTitle,
                     "content": articleContent,
                     "create_time": null,
                     "published_time": null,
@@ -44,6 +44,18 @@ export default function Index() {
             <Container fluid>
                 <Row style={{minHeight: 500}}>
                     <Col md={8} style={{minHeight: 500}}>
+
+                        <InputGroup className="mt-3 mb-3">
+                            <InputGroup.Text >제목</InputGroup.Text>
+                            <Form.Control
+                                onChange={(e)=> {
+                                    setArticleTitle(e.target.value)
+                                    console.log(e.target.value)
+                                }}
+                                placeholder="기사 제목을 입력하세요."
+                            />
+                        </InputGroup>
+
                         <Editor
                             name="description"
                             onChange={(data) => {
