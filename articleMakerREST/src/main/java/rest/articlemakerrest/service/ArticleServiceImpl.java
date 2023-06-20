@@ -21,4 +21,9 @@ public class ArticleServiceImpl implements ArticleService{
     public Boolean serveInsertArticle(Article article) {
         return articleMapper.insertArticle(article) > 0;//insert한 컬럼개수가 0보다 클 때
     }
+
+    @Override
+    public Boolean serveDeleteArticle(Long id) {
+        return articleMapper.deleteArticle(id)>0;
+    }
 }

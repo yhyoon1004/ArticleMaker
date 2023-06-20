@@ -19,4 +19,9 @@
                 #{view_count}
         )
     </insert>
+
+    <delete id="deleteArticle" parameterType="Long">
+        DELETE FROM articleMaker.article
+        WHERE id =#{id}
+    </delete>
 </mapper>

@@ -10,4 +10,6 @@ public interface ArticleMapper {
     List<Article> getArticleList();
 
     int insertArticle(Article article);
+
+    int deleteArticle(Long id);
 }

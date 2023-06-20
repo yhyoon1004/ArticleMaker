@@ -10,4 +10,6 @@ public interface ArticleService {
     List<Article> serveGetArticleList();
 
     Boolean serveInsertArticle(Article article);
+
+    Boolean serveDeleteArticle(Long id);
 }

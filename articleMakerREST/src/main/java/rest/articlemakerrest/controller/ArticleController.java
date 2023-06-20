@@ -1,10 +1,7 @@
 package rest.articlemakerrest.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import rest.articlemakerrest.DTO.Article;
 import rest.articlemakerrest.service.ArticleService;
 
@@ -29,5 +26,10 @@ public class ArticleController {
     @PostMapping("/articleInsert")
     public Boolean articleInsert(@RequestBody Article article) {
         return articleService.serveInsertArticle(article);
+    }
+
+    @DeleteMapping("/articleDelete/{id}")
+    public Boolean articleDelete(@PathVariable Long id) {
+        return articleService.serveDeleteArticle(id);
     }
 }
