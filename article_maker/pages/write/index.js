@@ -31,9 +31,7 @@ export default function Index() {
                     "published_time": null,
                     "view_count": 0
                 }
-
-                }
-            ).catch();
+            }).catch();
         } catch (e){
 
         }
