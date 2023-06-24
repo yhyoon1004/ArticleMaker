@@ -1,6 +1,7 @@
 import Table from 'react-bootstrap/Table';
 import {useEffect, useState} from "react";
 import axios from "axios";
+import ArticleSimpleView from "@/component/modal/ArticleSimpleView";
 
 export default function ArticleTable() {
 
@@ -25,6 +26,10 @@ export default function ArticleTable() {
         }
     }
 
+    const onClickArticle = (atitle, acontent, awriter, acreatedtime, apublishedTime) =>{
+            <ArticleSimpleView title={atitle} content={acontent} writer={awriter} createdTime={acreatedtime} publishedTime={apublishedTime}/>
+    }
+
     useEffect(() => {
         console.log("article : ", article);
         articleDataFetch();
@@ -46,11 +51,11 @@ export default function ArticleTable() {
             <tbody>
             {
                 article.map((item, idx) => (
-                    <tr key={idx}>
+                    <tr key={idx} onClick={onClickArticle}>
                         <td>{item.create_time}</td>
                         <td>{item.writer_id}</td>
                         <td>{item.title}</td>
-                        <td>{item.content}</td>
+                        {/*<td>{item.content}</td>*/}
                         <td>{item.status}</td>
                         <td>{item.view_count}</td>
                         <td>{item.published_time}</td>
