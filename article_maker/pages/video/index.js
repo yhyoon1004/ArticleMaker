@@ -3,7 +3,7 @@ import Layout from "@/component/layout/layout";
 
 export default function Video() {
     const videoUploadClick = (tabURI) => {
-        window.open(tabURI, "_blank", "noopener, norefferer");
+        window.open(tabURI, "_blank", "width=500,height=600 noopener, norefferer","");
     };
 
     return (
