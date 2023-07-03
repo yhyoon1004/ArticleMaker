@@ -9,13 +9,13 @@ export default function SideBar() {
             id="uncontrolled-tab-example"
             className="mb-3"
         >
-            <Tab eventKey="home" title="도구">
+            <Tab eventKey="home" title="메뉴">
 
             </Tab>
-            <Tab eventKey="profile" title="기타">
+{/*            <Tab eventKey="profile" title="옵션">
             </Tab>
             <Tab eventKey="contact" title="설정" >
-            </Tab>
+            </Tab>*/}
         </Tabs>
     );
 };
