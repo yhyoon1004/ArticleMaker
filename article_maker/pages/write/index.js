@@ -68,7 +68,7 @@ export default function Index() {
                                     <InputGroup.Text>분류</InputGroup.Text>
                                     <Form.Select >
                                         <option>선택</option>
-                                        <hr/>
+
                                         <option>정치</option>
                                         <option>경제</option>
                                         <option>사회</option>
@@ -104,12 +104,6 @@ export default function Index() {
                     </Col>
                     <Col className="mt-3" md={4} color={"grey"}>
                         <SideBar/>
-                    </Col>
-                    <Col md={8}>
-
-                    </Col>
-
-                    <Col md={4}>
                         <Button className="p-1 ms-1" variant="secondary">취소</Button>
                         <Button className="p-1 ms-1" variant="secondary">임시 저장</Button>
                         <Button className="p-1 ms-1" variant="secondary" onClick={onClickSave}>송고</Button>
