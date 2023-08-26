@@ -8,5 +8,5 @@ export async function getArticleList(targetUrl, targetParameter) {
             "Content-Type": "application/json",
         },
         params: targetParameter,
-    });
+    }).catch();
 }
