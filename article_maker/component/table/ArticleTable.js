@@ -20,7 +20,7 @@ export default function ArticleTable() {
             }).then(res=>{
                 console.log(res.data);
                 setArticle(res.data);
-            })
+            }).catch()
         }catch (error){
             console.log(error)
         }
