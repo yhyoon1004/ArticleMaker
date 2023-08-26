@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import {Button, Form, Col, Container, InputGroup, Row} from "react-bootstrap";
 import SideBar from "@/component/editor/SideBar";
 import axios from "axios";
+import {log} from "next/dist/server/typescript/utils";
 
 export default function Index() {
     const [editorLoaded, setEditorLoaded] = useState(false);
@@ -35,9 +36,9 @@ export default function Index() {
                     "published_time": null,
                     "view_count": 0
                 }
-            }).catch();
+            }).catch(reason => log("error"));
         } catch (e) {
-
+            console.log(e)
         }
     }
 
