@@ -5,5 +5,5 @@ export async function useGetArticleList(articleURL, parameter) {
             url: articleURL,
             params: Object.fromEntries(parameter)
         }
-    );
+    ).catch();
 }

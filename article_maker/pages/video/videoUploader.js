@@ -24,7 +24,7 @@ export default function VideoUploader() {
             }
 
 
-        })
+        }).catch()
     };
 
     return (
