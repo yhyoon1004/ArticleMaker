@@ -11,20 +11,25 @@ export default function VideoUploader() {
     };
 
     const submitHandling = () => {
-        axios({
-            url: "http://localhost:8080/videoUpload",
-            method: "POST",
-            headers: {
-                "Content-Type": "multipart/form-data"
-            },
-            data: file
-        }).then((response)=>{
-            if(response){
+        try {
+            axios({
+                url: "http://localhost:8080/videoUpload",
+                method: "POST",
+                headers: {
+                    "Content-Type": "multipart/form-data"
+                },
+                data: file
+            }).then((response)=>{
+                if(response){
 
-            }
+                }
 
 
-        }).catch()
+            })
+        }catch (e) {
+
+        }
+
     };
 
     return (
