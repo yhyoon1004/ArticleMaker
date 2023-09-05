@@ -21,7 +21,7 @@ export default function Index() {
     const onClickSave = async () => {
         try {
             await axios({
-                url: "http://localhost:8080/articleInsert",
+                url: "http://210.114.19.120:8080/articleInsert",
                 method: "post",
                 headers: {
                     "Content-Type": "application/json"

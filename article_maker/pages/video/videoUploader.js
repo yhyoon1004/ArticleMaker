@@ -13,7 +13,7 @@ export default function VideoUploader() {
     const submitHandling = () => {
         try {
             axios({
-                url: "http://localhost:8080/videoUpload",
+                url: "http://210.114.19.120:8080/videoUpload",
                 method: "POST",
                 headers: {
                     "Content-Type": "multipart/form-data"

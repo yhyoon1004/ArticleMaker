@@ -10,7 +10,7 @@ export default function ArticleTable() {
     const articleDataFetch = async () => {
         try {
             await axios({
-                url: "http://localhost:8080/desk",
+                url: "http://210.114.19.120:8080/desk",
                 method: "get",
                 headers: {
                     "Content-Type": "application/json"

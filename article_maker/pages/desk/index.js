@@ -3,7 +3,7 @@ import ArticleTable from "@/component/table/ArticleTable";
 import {useQuery} from "react-query";
 import {getArticleList} from "@/queryFunction/getArticleList";
 
-const articleURL = "http://localhost:8080/desk";
+const articleURL = "http://210.114.19.120:8080/desk";
 export default function ArticleListPage() {
 
     const articleQuery = useQuery({
