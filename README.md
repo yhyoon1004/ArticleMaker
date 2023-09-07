@@ -7,6 +7,11 @@
 </div>
 <hr/>
 
+<div>
+<h3>접속 도메인 : http://syh2516.cafe24.com:3000/</h3>
+</div>
+<hr/>
+
 <h1>진척도 UI</h1>   
 - 메인화면
 <img src="https://github.com/yhyoon1004/ArticleMaker/assets/79188190/99873098-b343-4f45-a92f-ece24ed89543" alt=""/>
