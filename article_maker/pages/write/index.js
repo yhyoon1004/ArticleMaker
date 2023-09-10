@@ -27,13 +27,13 @@ export default function Index() {
                     "Content-Type": "application/json"
                 },
                 data: {
-                    "id": null,
+                    "id": 0,
                     "status": 0,
                     "writer_id": "yh",
                     "title": articleTitle,
                     "content": articleContent,
-                    "create_time": null,
-                    "published_time": null,
+                    "create_time": 0,
+                    "published_time": 0,
                     "view_count": 0
                 }
             }).catch(reason => log("error"));
